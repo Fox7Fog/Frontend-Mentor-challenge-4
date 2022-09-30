@@ -239,12 +239,12 @@ main {
     gap: 1rem;
 }
 
-.top span {
+.top div {
     width: 30%;
     text-align: center;
 }
 
-.top span p {
+.top div p {
     font-size: 0.95rem;
     letter-spacing: 0.05rem;
     word-spacing: 0.05rem;
@@ -459,12 +459,12 @@ footer {
         gap: 1rem;
     }
     
-    .top span {
+    .top div {
         width: 100%;
         text-align: center;
     }
     
-    .top span p {
+    .top div p {
         font-size: 0.9rem;
         letter-spacing: normal;
         word-spacing: 0.05rem;
@@ -525,11 +525,11 @@ footer {
     }
 
     .media {
-        width: 30%;
+        width: 40%;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
         gap: 1rem;
         padding-left: 0;
     }
