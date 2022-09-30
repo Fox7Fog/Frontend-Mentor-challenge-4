@@ -1,0 +1,538 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    line-height: 2;
+}
+
+:root {
+    --text-color: hsl(201, 11%, 66%);
+    --header-color: hsl(210, 10%, 33%);
+    --button-mac: hsl(233, 100%, 69%);
+    --button-ios: hsl(171, 66%, 44%);
+}
+
+body {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    color: var(--text-color);
+    margin: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header"
+    "main"
+    "footer";
+    place-content: center;
+    gap: 5rem;
+   
+    
+}
+
+/* links */
+
+a:hover {
+    cursor: pointer;
+}
+
+/* headings */
+
+h1,
+h2, 
+h3 {
+    color: var(--header-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+/* section 1 */
+
+header {
+    grid-area: header;
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 70vmin;
+    padding-top: 8rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.text-header {
+    width: 60%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.text {
+    width: 50%;
+    text-align: center;
+}
+
+/* buttons styling */
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    border-radius: 30px;
+    width: 12.5rem;
+    height: 3.2rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.button-iOS {
+    background-color: var(--button-ios);
+    border-color: var(--button-ios);
+    box-shadow: var(--button-ios) 0px 10px 15px -10px, var(--button-ios) 0px 5px 5px -10px;
+}
+
+.button-Mac {
+    background-color: var(--button-mac);
+    border-color: var(--button-mac);
+    box-shadow: var(--button-mac) 0px 10px 15px -10px, var(--button-mac) 0px 5px 5px -10px;
+}
+
+.button-iOS:hover {
+    background-color: hsl(171, 52%, 58%);
+    
+}
+
+.button-Mac:hover {
+    background-color: hsl(233, 100%, 77%);
+}
+
+/* main */
+
+main {
+    grid-area: main;
+    display: grid;
+    margin: 0 0 5rem 0; 
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "keep-track-of-your-snippets"
+    "access-clipboard-anywhere"
+    "supercharge-your-workflow"
+    "clipboard-for-iOS-and-Mac-OS";
+    place-content: center;
+    gap: 5rem;
+    
+}
+
+/* section 2 */
+
+.keep-track-of-your-snippets {
+    grid-area: keep-track-of-your-snippets;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    
+}
+
+.box {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+
+.img-computer {
+    width: 80%;
+    height: 80%;
+    margin-left: -15rem;
+    
+}
+
+.right {
+    width: 30ch;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+/* section 3 */
+
+.access-clipboard-anywhere {
+    grid-area: access-clipboard-anywhere;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.image-devices {
+    width: 65%;
+    height: 65%;
+    
+}
+
+/* section 4 */
+
+.supercharge-your-workflow {
+    grid-area: supercharge-your-workflow;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.inside {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.top {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.top span {
+    width: 30%;
+    text-align: center;
+}
+
+.top span p {
+    font-size: 0.95rem;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.05rem;
+}
+
+.bottom-icons {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+/* section 5 */
+
+.clipboard-for-iOS-and-Mac-OS {
+    grid-area: clipboard-for-iOS-and-Mac-OS;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* section 6 */
+
+footer {
+    grid-area: footer; 
+    background-color: hsl(210, 10%, 95%);
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.footer-logo img {
+    width: 2rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 4rem;
+}
+
+.info span {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.info span a {
+    color: var(--header-color);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.2rem;
+    text-align: left;
+    text-decoration: none;
+}
+
+.info span a:hover {
+    color: var(--button-ios);
+}
+
+.media {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-left: 10rem;
+}
+
+.media a:hover {
+    color:(171, 66%, 44%) ;
+}
+
+.media a img:hover {
+    filter: invert(57%) sepia(48%) saturate(626%) hue-rotate(122deg) brightness(97%) contrast(88%);
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    main {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .header {
+        background-image: url(images/bg-header-mobile.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100%;
+    }
+
+    .text-header {
+        width: 90%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .text {
+        width: 90%;
+        text-align: center;
+    }
+
+    /* buttons styling */
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    button {
+        border-radius: 30px;
+        width: 17rem;
+        height: 3.2rem;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    /* section 2 */
+
+    .box {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+    
+    .img-computer {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    
+    .right {
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    /* heading and paragraph styles */
+
+    h1,
+    h2,
+    h3 {
+        line-height: 1.2;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    /* section 3 (image) */
+
+    .image-devices {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* section 4 */
+
+    .top {
+        /*padding: 1rem;*/
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .top span {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .top span p {
+        font-size: 0.9rem;
+        letter-spacing: normal;
+        word-spacing: 0.05rem;
+        /*line-height: 2;*/
+    }
+
+    .bottom-icons {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+       
+    }
+
+    /* footer */
+
+    footer {
+        grid-area: footer; 
+        background-color: hsl(210, 10%, 95%);
+        /*padding: 1.5rem 2rem;*/
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+    
+    }
+
+    .footer-logo img {
+        margin-top: 1rem;
+        width: 3rem;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+
+    }
+
+    .info span {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer a:hover {
+        color: var(--button-ios);
+    }
+
+    .media {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        gap: 1rem;
+        padding-left: 0;
+    }
+
+}
+
